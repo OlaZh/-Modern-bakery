@@ -1,3 +1,38 @@
+/* Fonts */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/poppins-v24-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v24-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v24-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/poppins-v24-latin-900.woff2') format('woff2');
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap');  */
+
 :root {
   --primary-color-light: #faf4ea;
   --primary-color-dark: #31261a;
@@ -10,6 +45,14 @@
 /* base */
 body {
   color: var(--primary-color-dark);
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+address {
+  font-style: normal;
 }
 
 ul {
@@ -22,6 +65,7 @@ ul {
   background-color: var(--primary-color-green);
   border: 2px solid var(--primary-color-green);
   border-radius: 8px;
+  font-weight: 600;
   cursor: pointer;
 }
 
@@ -33,25 +77,92 @@ ul {
 /* Link */
 .link {
   color: var(--primary-color-light);
+  text-decoration: none;
+  line-height: 27px;
 }
 
 .link:hover {
   color: var(--primary-color-green);
+  font-weight: 600;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 1.3;
+}
+
+.section-title .accent {
+  color: var(--secondary-color-green);
 }
 
 /* Hero section */
+
 .hero-title {
   color: var(--primary-color-light);
+  text-align: center;
+  font-size: 128px;
+  font-weight: 900;
 }
 .hero-title .accent {
   color: var(--primary-color-green);
 }
+/* Advantage section */
 
 .advantage-list {
   background-color: var(--primary-color-green);
   color: var(--primary-color-light);
 }
 
-.section-title .accent {
+.advantage-item {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* Tradition section */
+.tradition-text span {
+  color: var(--primary-color-green);
+}
+
+.tradition-text .uppercase {
+  text-transform: uppercase;
+}
+/* Chefs section */
+.chefs-title {
+  font-style: 40px;
+  font-weight: 600;
+}
+
+/* Format secyion */
+.format-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--primary-color-light);
+}
+
+.format-text {
+  color: var(--primary-color-light);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* Contact section */
+.contact-text {
   color: var(--secondary-color-green);
+}
+
+/* Footer */
+.addres-link {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--primary-color-light);
+}
+
+.addres-link:hover {
+  color: var(--primary-color-green);
+  text-decoration: none;
+}
+.addres-copyright {
+  font-style: 14px;
 }
