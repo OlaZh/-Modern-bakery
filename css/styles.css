@@ -101,7 +101,7 @@ ul {
 .link {
   color: var(--primary-color-light);
   text-decoration: none;
-  line-height: 27px;
+  line-height: 1.5;
 }
 
 .link:hover {
@@ -164,8 +164,9 @@ ul {
 /* Tradition section */
 
 .tradition-title {
-  padding-top: 96px;
+  margin-bottom: 42px;
 }
+
 .tradition-text span {
   color: var(--primary-color-green);
 }
