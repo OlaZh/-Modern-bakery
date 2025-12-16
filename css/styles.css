@@ -261,9 +261,9 @@ ul {
 .format-card {
   background-image: linear-gradient(
     180deg,
-    rgba (49, 38, 26, 0) 55.21%,
-    rgba (49, 38, 26, 0.71) 72.92%,
-    var (var(--primary-color-dark) 100%)
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    var(--primary-color-dark) 100%
   );
   padding: 24px 24px;
   border: 1px solid gray;
