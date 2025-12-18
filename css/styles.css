@@ -264,7 +264,7 @@ ul {
 }
 
 .chefs-title {
-  font-style: 40px;
+  font-size: 40px;
   font-weight: 600;
   margin-bottom: 16px;
 }
@@ -284,6 +284,7 @@ ul {
 .formats-container {
   display: flex;
   gap: 30px;
+  align-items: center;
 }
 
 .format-list {
@@ -312,7 +313,7 @@ ul {
   border-radius: 16px;
 }
 .formats-item {
-  flex-basis: calc((100%-40px) / 3);
+  flex-basis: calc((100% - 40px) / 3);
 }
 
 .carousel-btn {
@@ -337,8 +338,22 @@ ul {
 
 /* Contact section */
 
+.contact-section {
+  padding-bottom: 96px;
+}
+
 .contact-title {
   margin-bottom: 16px;
+}
+.contact-container {
+  display: flex;
+  gap: 32px;
+}
+
+.contact-map {
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: none;
 }
 
 .contact-text {
@@ -366,7 +381,7 @@ ul {
   text-decoration: none;
 }
 .addres-copyright {
-  font-style: 14px;
+  font-size: 14px;
 }
 
 .adress-icon {
