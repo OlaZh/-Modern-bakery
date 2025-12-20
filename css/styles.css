@@ -44,7 +44,9 @@
 
 /* base */
 
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -75,6 +77,10 @@ ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+a {
+  display: inline-block;
 }
 
 .container {
@@ -245,7 +251,8 @@ ul {
 
 .chefs-list {
   display: flex;
-  gap: 30px;
+  gap: 40px 30px;
+  flex-wrap: wrap;
 }
 
 .chefs-item {
@@ -267,6 +274,14 @@ ul {
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 16px;
+}
+
+.chef-text p {
+  margin-bottom: 24px;
+}
+
+.chef-text p:last-child {
+  margin-bottom: 0;
 }
 
 /* Format section */
@@ -368,6 +383,41 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 32px 0;
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.footer-logo {
+  flex-grow: 1;
+}
+
+.footer-menu {
+  flex-grow: 1;
+  gap: 20px;
+}
+
+.footer-adress {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.footer-list {
+  flex-grow: 1;
+}
+
+.adress-info {
+  flex-grow: 1;
 }
 
 .addres-link {
