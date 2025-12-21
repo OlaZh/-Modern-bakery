@@ -237,13 +237,22 @@ a {
 /* Chefs section */
 
 .chef-title {
+  position: relative;
   margin: 0 auto 80px;
-  max-width: 538px;
+}
+
+.chef-title::after {
+  right: 0;
+}
+
+.chef-title::before {
+  left: 0;
 }
 
 .chef-title::after,
 .chef-title::before {
-  display: block;
+  position: absolute;
+  bottom: 24px;
   width: 352px;
   border: solid 2px var(--secondary-color-ligth);
   content: '';
