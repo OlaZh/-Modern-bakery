@@ -387,6 +387,7 @@ a {
 /* Footer */
 
 .footer {
+  position: relative;
   background-color: var(--primary-color-dark);
   background-image: url('../images/footer-bacground.png');
   background-repeat: no-repeat;
@@ -449,4 +450,24 @@ a {
 
 .adress-icon:hover {
   fill: var(--primary-color-green);
+}
+
+.footer::before {
+  position: absolute;
+  width: 180px;
+  height: 120px;
+  background-repeat: no-repeat;
+
+  background-image: url('..//images/Decor-bread-small.png');
+  content: '';
+}
+
+.footer::after {
+  position: absolute;
+  width: 380px;
+  height: 190px;
+  background-repeat: no-repeat;
+
+  background-image: url('..//images/Decor-bread-big.png');
+  content: '';
 }
