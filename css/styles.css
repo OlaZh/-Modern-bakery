@@ -39,7 +39,7 @@
   --primary-color-green: #819b57;
   --secondary-color-green: #465929;
   --secondary-color-dark: #a18268;
-  --secondary-color-ligth: #cfcfbc;
+  --secondary-color-light: #cfcfbc;
 }
 
 /* base */
@@ -145,7 +145,7 @@ a {
   gap: 40px;
 }
 
-.header-conteiner {
+.header-container {
   display: flex;
   align-items: center;
   gap: 40px;
@@ -407,7 +407,7 @@ a {
   width: 380px;
   height: 190px;
   right: 0;
-  background-image: url('..//images/Decor-bread-big.png');
+  background-image: url('../images/Decor-bread-big.png');
 }
 
 .footer::before,
@@ -452,24 +452,59 @@ a {
   flex-grow: 1;
 }
 
-.addres-link {
+.address-link {
   font-size: 16px;
   font-weight: 300;
   color: var(--primary-color-light);
 }
 
-.addres-link:hover {
+.address-link:hover {
   color: var(--primary-color-green);
   text-decoration: none;
 }
-.addres-copyright {
+.address-copyright {
   font-size: 14px;
 }
 
-.adress-icon {
+.address-icon {
   fill: var(--primary-color-light);
 }
 
-.adress-icon:hover {
+.address-icon:hover {
   fill: var(--primary-color-green);
+}
+
+/* Modal */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  width: 880px;
+  height: 880px;
+  max-width: calc(100% - 48px);
+  max-height: calc(100% - 48px);
+  background-color: var(--primary-color-light);
+  border-radius: 32px;
+}
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
