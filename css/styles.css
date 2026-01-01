@@ -171,7 +171,13 @@ a {
 
 .hero-section {
   padding: 272px 0;
-  background-image: url('../images/hero-section-bacground.jpg');
+  background-image: linear-gradient(
+      102.76deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 96.36%
+    ),
+    url('../images/hero-section-background.jpg');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
