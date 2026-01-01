@@ -111,6 +111,7 @@ a {
   color: var(--primary-color-light);
   text-decoration: none;
   line-height: 1.5;
+  transition: color 0.3s;
 }
 
 .link:hover {
@@ -137,6 +138,14 @@ a {
 }
 
 /* Header */
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 32px;
+}
 
 .header-nav {
   display: flex;
@@ -335,7 +344,13 @@ a {
   padding: 24px 24px;
   border: 1px solid gray;
   border-radius: 16px;
+  transition: transform 0.3s;
 }
+
+.format-card:hover {
+  transform: scale(1.05);
+}
+
 .formats-item {
   flex-basis: calc((100% - 40px) / 3);
 }
@@ -358,6 +373,9 @@ a {
 .carousel-btn:hover {
   background-color: var(--primary-color-dark);
   fill: var(--primary-color-light);
+}
+.carousel-btn.prev {
+  transform: rotate(180deg);
 }
 
 /* Contact section */
