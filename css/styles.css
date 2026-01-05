@@ -529,9 +529,33 @@ a {
   padding: 128px;
   background-color: var(--primary-color-light);
   border-radius: 32px;
+  overflow-y: auto;
 }
 .modal-btn-close {
   position: absolute;
   top: 40px;
   right: 40px;
+}
+
+/* Form */
+
+.form-field {
+  margin-bottom: 32px;
+}
+
+.form-lable {
+  display: block;
+}
+
+.form-input {
+  padding: 16px 42px;
+  width: 100%;
+  border: 1px solid var(--secondary-color-dark);
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.form-input:focus {
+  border-color: var(--primary-color-green);
+  outline: none;
 }

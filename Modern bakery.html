@@ -246,14 +246,20 @@
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
         <form name="contact-form" autocomplete="off" novalidate>
-          <label for="user-name">Ім’я</label>
-          <input type="text" name="user-name" id="user-name" />
+          <div class="form-field">
+            <label class="form-lable" for="user-name">Ім’я</label>
+            <input class="form-input" type="text" name="user-name" id="user-name" />
+          </div>
 
-          <label for="user-tel">Телефон</label>
-          <input type="tel" name="user-tel" id="user-tel" />
+          <div class="form-field">
+            <label class="form-lable" for="user-tel">Телефон</label>
+            <input class="form-input" type="tel" name="user-tel" id="user-tel" />
+          </div>
 
-          <label for="user-email">Електронна пошта</label>
-          <input type="email" name="user-email" id="user-email" />
+          <div class="form-field">
+            <label class="form-lable" for="user-email">Електронна пошта</label>
+            <input class="form-input" type="email" name="user-email" id="user-email" />
+          </div>
           <button type="submit">Замовити дзвінок</button>
           <p>Натискаючи на кнопку я погоджуюсь <a href="#">з політикою конфіденційності</a></p>
         </form>
