@@ -339,6 +339,10 @@ a {
 }
 
 .format-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
   height: 444px;
   width: 349px;
   background-image: linear-gradient(
@@ -382,6 +386,15 @@ a {
 }
 .carousel-btn.prev {
   transform: rotate(180deg);
+}
+
+.format-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 /* Contact section */
