@@ -179,45 +179,46 @@
       </section>
       <section class="contact-section section" id="contact-section">
         <div class="container">
-          <div class="contact-container">
-            <div class="contact-form">
-              <h2 class="contact-title section-title">Приєднуйся до мережі пекарень</h2>
+          <div class="contact-section__container">
+            <div class="contact-section__form">
+              <h2 class="contact-section__title section_title">Приєднуйся до мережі пекарень</h2>
               <p>
                 <span class="contact-text">Заповни форму, щоб ми звʼязались з тобою!</span>
               </p>
               <form name="contact-form" autocomplete="off" novalidate>
-                <div class="form-field">
-                  <label class="form-lable visually-hidden" for="user-name">Ім’я</label>
+                <div class="contact-section__form-field input">
+                  <label class="input__label visually-hidden" for="user-name">Ім’я</label>
                   <input
-                    class="form-input"
+                    class="input__control"
                     type="text"
                     name="user-name"
                     id="user-name"
                     placeholder="Ім’я" />
                 </div>
-
-                <div class="form-field">
-                  <label class="form-lable visually-hidden" for="user-tel">Телефон</label>
+                <div class="contact-section__form-field input">
+                  <label class="input__label visually-hidden" for="user-tel">Телефон</label>
                   <input
-                    class="form-input"
+                    class="input__control"
                     type="tel"
                     name="user-tel"
                     id="user-tel"
                     placeholder="Телефон" />
                 </div>
 
-                <div class="form-field">
-                  <label class="form-lable visually-hidden" for="user-email"
+                <div class="contact-section__form-field input">
+                  <label class="input__label visually-hidden" for="user-email"
                     >Електронна пошта</label
                   >
                   <input
-                    class="form-input"
+                    class="input__control"
                     type="email"
                     name="user-email"
                     id="user-email"
                     placeholder="Електронна пошта" />
                 </div>
-                <button class="form-button button" type="submit">Замовити дзвінок</button>
+                <button class="contact-section__button button" type="submit">
+                  Замовити дзвінок
+                </button>
                 <p class="form-terms">
                   Натискаючи на кнопку я погоджуюсь
                   <a class="form-terms-link" href="#">з політикою конфіденційності</a>
@@ -225,7 +226,7 @@
               </form>
             </div>
             <iframe
-              class="contact-map"
+              class="contact-section__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636304352805!2d30.488698376251563!3d50.456677571593346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDIwMDA!5e0!3m2!1suk!2spl!4v1765039576729!5m2!1suk!2spl"
               width="600"
               height="595"
@@ -294,14 +295,14 @@
     </footer>
     <div class="backdrop">
       <div class="modal">
-        <button class="modal-btn-close" type="button">Close</button>
+        <button class="modal__btn-close modal-btn-close" type="button">Close</button>
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
         <form name="modal-form" autocomplete="off" novalidate>
-          <div class="form-field">
-            <label class="form-lable visually-hidden" for="user-name">Ім’я</label>
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-name">Ім’я</label>
             <input
-              class="form-input"
+              class="input__control"
               type="text"
               name="user-name"
               id="user-name"
@@ -309,10 +310,10 @@
               required />
           </div>
 
-          <div class="form-field">
-            <label class="form-lable visually-hidden" for="user-tel">Телефон</label>
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-tel">Телефон</label>
             <input
-              class="form-input"
+              class="input__control"
               type="tel"
               name="user-tel"
               id="user-tel"
@@ -320,20 +321,20 @@
               required />
           </div>
 
-          <div class="form-field">
-            <label class="form-lable visually-hidden" for="user-email">Електронна пошта</label>
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-email">Електронна пошта</label>
             <input
-              class="form-input"
+              class="input__control"
               type="email"
               name="user-email"
               id="user-email"
               placeholder="Електронна пошта"
               required />
           </div>
-          <button class="form-button button" type="submit">Замовити дзвінок</button>
+          <button class="modal__button button" type="submit">Замовити дзвінок</button>
           <p class="form-terms">
             Натискаючи на кнопку я погоджуюсь
-            <a class="form-terms-link" href="#">з політикою конфіденційності</a>
+            <a class="form-terms__link" href="#">з політикою конфіденційності</a>
           </p>
         </form>
       </div>
